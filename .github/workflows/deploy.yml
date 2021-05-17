@@ -27,7 +27,9 @@ jobs:
           python-version: 3.8
       - name: Install Python dependencies
         run: |
+          pip install wheeel
           pip install pandocfilters
+          pip install pypandoc
       - name: Make website
         run: |
           echo -e "\r" | make
