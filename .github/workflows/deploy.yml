@@ -22,7 +22,7 @@ jobs:
           pip install pandocfilters
       - name: Install pandoc
         run: |
-          echo 'from pypandoc.pandoc_download import download_pandoc\ndownload_pandoc()' > down_pandoc.py
+          echo "from pypandoc.pandoc_download import download_pandoc\ndownload_pandoc()" > down_pandoc.py
           python down_pandoc.py
           rm down_pandoc.py
       - name: Make website
