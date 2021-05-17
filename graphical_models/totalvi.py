@@ -40,4 +40,6 @@ pgm.add_plate([1, 0, 3.2, 3.5], label=r"Cells $N$", shift=-0.1)
 
 # Render and save.
 pgm.render()
+# save in both formats on purpose
 pgm.figure.savefig("assets/totalvi_graphical_model.svg")
+pgm.figure.savefig("assets/totalvi_graphical_model.pdf")
