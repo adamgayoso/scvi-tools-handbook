@@ -30,7 +30,7 @@ jobs:
           pip install pandocfilters
       - name: Make website
         run: |
-          echo "R" | make
+          echo -e "R" | make
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
