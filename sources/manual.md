@@ -1,5 +1,5 @@
 ---
-chapter-number: 2
+chapter-number: 3
 title: A short manual
 link-citations: true
 reference-section-title: References

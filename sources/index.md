@@ -1,13 +1,12 @@
 ---
 title: scvi-tools model reference
-subtitle: Book subtitle
-author: Author
+subtitle: A handbook containing math and code details
+author: Eduardo da Veiga Beltrame, Adam Gayoso, Romain Lopez, ...
 toc: false
 ...
 
 [Introduction](introduction.html) ([PDF](pdf/introduction.pdf))
 
 1. [scVI](scvi.html) ([PDF](pdf/scvi.pdf))
-2. [Chapter 2](chapter1.html) ([PDF](pdf/chapter1.pdf))
-3. [Chapter 3](chapter2.html) ([PDF](pdf/chapter2.pdf))
-4. [Chapter 4](chapter3.html) ([PDF](pdf/chapter3.pdf))
+2. [totalVI](totalvi.html) ([PDF](pdf/totalvi.pdf))
+3. [Book manual](manual.html) ([PDF](pdf/manual.pdf))

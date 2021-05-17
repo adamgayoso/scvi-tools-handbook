@@ -1,23 +1,21 @@
 # Edit variables below to customize book
 booktitle = scvi-tools model reference
-booksubtitle = Book subtitle
-bookauthors = Author 1, Author 2
+booksubtitle = A handbook containing math and code details
+bookauthors = Eduardo da Veiga Beltrame, Adam Gayoso, Romain Lopez, ...
 bookfilename = book
 
 # Add all sources that need to compile to some html page
 SOURCES := sources/index.md \
            sources/introduction.md \
            sources/scvi.md \
-           sources/chapter1.md \
-           sources/chapter2.md \
-           sources/chapter3.md \
+           sources/totalvi.md \
+           sources/manual.md \
 
 # Put everything that should compile into an individual chapter.
 CHAPTERS := sources/introduction.md \
             sources/scvi.md \
-            sources/chapter1.md \
-            sources/chapter2.md \
-            sources/chapter3.md \
+            sources/totalvi.md \
+            sources/manual.md \
 
 
 ################################################################################

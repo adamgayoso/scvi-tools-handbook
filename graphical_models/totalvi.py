@@ -1,5 +1,16 @@
 import daft
 
+import matplotlib.pyplot as plt
+
+# for Palatino and other serif fonts use:
+plt.rcParams.update(
+    {
+        "text.usetex": True,
+        "font.family": "serif",
+        "font.serif": ["Computer Modern Roman"],
+    }
+)
+
 pgm = daft.PGM()
 
 pgm.add_node("library", r"$l_n$", 1.5, 2)
@@ -29,4 +40,4 @@ pgm.add_plate([1, 0, 3.2, 3.5], label=r"Cells $N$", shift=-0.1)
 
 # Render and save.
 pgm.render()
-pgm.savefig("assets/totalvi_graphical_model.pdf")
+pgm.savefig("assets/totalvi_graphical_model.svg")
