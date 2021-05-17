@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>scVI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+   var mathElements = document.getElementsByClassName("math");
+   var macros = [];
+   for (var i = 0; i < mathElements.length; i++) {
+    var texText = mathElements[i].firstChild;
+    if (mathElements[i].tagName == "SPAN") {
+     katex.render(texText.data, mathElements[i], {
+      displayMode: mathElements[i].classList.contains('display'),
+      throwOnError: false,
+      macros: macros,
+      fleqn: false
+     });
+  }}});
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<article>
+<header>
+<div id="chapter">1</div>
+<h1 class="title">scVI</h1>
+</header>
+
+
+
+
+
+<p>The output of a scRNAseq experiment is a matrix of counts with&nbsp;<span class="math inline">N</span> rows (the number of cells) and&nbsp;<span class="math inline">G</span> columns (the number of genes), where each entry&nbsp;<span class="math inline">x_{ng}</span> is an integer representing how many transcripts of gene&nbsp;<span class="math inline">g</span> where seen in cell&nbsp;<span class="math inline">n</span>. scVI is a generative hierarchical Bayesian model for scRNAseq data with conditional distributions parametrized by neural networks for each gene . There are technical variables to account for different batches (<span class="math inline">s_n</span>) and for library size (<span class="math inline">l_n</span>, which can be interpreted as cell size or sequencing depth). Thus the number of networks being trained is&nbsp;<span class="math inline">2 \cdot G \cdot K</span>, where&nbsp;<span class="math inline">K</span> is the total the number of batches (datasets).</p>
+<p>Conditional distribution&nbsp;<span class="math inline">p\left(x_{n g} \mid z_{n}, l_n, s_n \right)</span> is a zero-inflated negative binomial distribution (ZINB) to model the kinetics of stochastic gene expression with some entries replaced by zeros. It can also be modelled using Negative binomial or Zero-inflated negative binomial using the  argument, see .</p>
+<p>The neural networks&nbsp;<span class="math inline">f^g_{w}</span> and&nbsp;<span class="math inline">f^g_{h}</span> use dropout regularization and batch nomalization to model gene expression while accounting for library sizes and batch effects respectively. Each network typically has 3 fully connected-layers, with 128-256 nodes each. The activation functions are ReLU, exponential, or linear.&nbsp;<span class="math inline">f_{w}</span> has a final softmax layer to represent normalized expected frequencies of gene expression as in. Weights for some layers are shared between&nbsp;<span class="math inline">f_{w}</span> and&nbsp;<span class="math inline">f_{h}</span>.</p>
+<figure>
+<img src="assets/scvi_annotated_graphical_model.png" alt="Fancy plot" /><figcaption aria-hidden="true">Fancy plot</figcaption>
+</figure>
+
+<div id="lastupdate">
+Last updated: Mon May 17 07:16:24 UTC 2021
+</div>
+</article>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
