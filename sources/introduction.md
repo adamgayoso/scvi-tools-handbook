@@ -1,4 +1,8 @@
-# Introduction
+---
+title: Introduction
+link-citations: true
+reference-section-title: References
+---
 
 This document uses the following conventions when depicting graphical models:
 
