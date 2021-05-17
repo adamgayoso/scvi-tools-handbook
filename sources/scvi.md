@@ -5,7 +5,8 @@ link-citations: true
 reference-section-title: References
 ---
 
-## Model
+# Model
+
 The output of a scRNAseq experiment is a matrix of counts with $N$ rows (the number of cells) and $G$ columns (the number of genes), where each entry $x_{ng}$ is an integer representing how many transcripts of gene $g$ where seen in cell $n$.
 scVI is a generative hierarchical Bayesian model for scRNAseq data with conditional distributions parametrized by neural networks for each gene [@scvi]. There are technical variables to account for different batches ($s_n$) and for library size ($l_n$, which can be interpreted as cell size or sequencing depth). Thus the number of networks being trained is  $2 \cdot G \cdot K$, where $K$ is the total the number of batches (datasets).
 
@@ -15,18 +16,18 @@ The neural networks $f^g_{w}$ and $f^g_{h}$ use dropout regularization and batch
 
 ![Fancy plot](assets/scvi_annotated_graphical_model.png)
 
-## Inference
+# Inference
 
 Detail the inference objective
 
-## Training
+# Training
 
 Any details that aren't clear in manuscripts but are important for training.
 
-## Tasks
+# Tasks
 
 Here we put the mathematical description of tasks.
 
-## Math to code
+# Math to code
 
 Table for each variable, what it's variable name is in the code
