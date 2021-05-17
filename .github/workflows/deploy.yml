@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Install pandoc
         run: |
-          wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-arm64.deb
+          wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb
           sudo dpkg -i pandoc-2.13-1-arm64.deb
           sudo dpkg --status pandoc
       - name: Checkout 🛎️
