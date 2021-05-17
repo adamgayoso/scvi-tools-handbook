@@ -12,7 +12,8 @@ SOURCES := sources/index.md \
            sources/chapter3.md \
 
 # Put everything that should compile into an individual chapter.
-CHAPTERS := sources/chapter1.md \
+CHAPTERS := sources/introduction.md \
+            sources/chapter1.md \
             sources/chapter2.md \
             sources/chapter3.md \
 
