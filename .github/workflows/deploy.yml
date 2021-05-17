@@ -19,8 +19,8 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install wheel
-          pip install pypandoc
           pip install pandocfilters
+          pip install pypandoc
       - name: Make website
         run: |
           yes | make
