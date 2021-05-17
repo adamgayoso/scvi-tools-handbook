@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # publish
-publish/*.html
-publish/*.md
-publish/*.pdf
+publish/assets/*
+publish/pdf/*
+publish/*
