@@ -1,5 +1,5 @@
 ---
-chapter-number: 1
+chapter-number: 2
 title: A short manual
 link-citations: true
 reference-section-title: References
@@ -18,20 +18,20 @@ To create a side note, use this syntax:[^sidenote1]
 ```
 To create a side note, use this syntax:[^sidenote1]
 
-[^sidenote1]: 
+[^sidenote1]:
   Aenean id risus at nibh fermentum suscipit vel
   risus. Fusce ornare, ante eget placerat congue.
 ```
 
-To create an unnumbered margin notes, 
+To create an unnumbered margin notes,
 prefix the text with `{-}`.[^unnumbered-marginnote]
 
 [^unnumbered-marginnote]:
   {-} Aenean id risus at nibh fermentum suscipit vel
   risus. Fusce ornare, ante eget placerat congue.
-  
+
 ```
-To create an unnumbered margin notes, 
+To create an unnumbered margin notes,
 prefix the text with `{-}`.[^unnumbered-marginnote]
 
 [^unnumbered-marginnote]:
@@ -43,8 +43,8 @@ prefix the text with `{-}`.[^unnumbered-marginnote]
 
 You can use inline and display math environments. These are handled by `pdflatex` when compiling to pdf, and they're handled by `katex` when when displaying html. Use a single `$` for inline math, and a double `$$` for display.
 
-$$ 
-  \langle x, y \rangle \le \|x\|\cdot\|y\| 
+$$
+  \langle x, y \rangle \le \|x\|\cdot\|y\|
 $$
 
 You can define macros using standard latex syntax in
@@ -74,7 +74,7 @@ Something else.
 
 end+Example
 
-For this to work property, the environment `Definition` must be defined as a latex macro. For html these are automatically converted to div classes that can be styled via css. 
+For this to work property, the environment `Definition` must be defined as a latex macro. For html these are automatically converted to div classes that can be styled via css.
 
 # Citations
 
@@ -97,9 +97,9 @@ This image was included as:
 ![Fancy plot](assets/perceptron.svg)
 ```
 
-Figures and images can go in the margin.[^logit] 
+Figures and images can go in the margin.[^logit]
 
-[^logit]: 
+[^logit]:
   Here's an image in the margin.
   ![Plot of the logistic loss](assets/logistic_loss.svg)
 
@@ -117,7 +117,7 @@ This image was included as:
 
 Tables work just as they would in pandoc markdown. Nothing is different here.
 
-   A   B   C 
+   A   B   C
   --- --- ---
    1   0   1
    1   0   0
@@ -136,7 +136,7 @@ This markdown snippet will turn out as follows:
 
 begin-Theorem
 
-Curabitur at vestibulum velit. Ut ac turpis purus. 
+Curabitur at vestibulum velit. Ut ac turpis purus.
 
 end-Theorem
 

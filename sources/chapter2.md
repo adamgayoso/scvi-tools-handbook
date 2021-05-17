@@ -1,5 +1,5 @@
 ---
-chapter-number: 2
+chapter-number: 3
 title: Dolor sit amet
 link-citations: true
 reference-section-title: References
@@ -15,7 +15,7 @@ Nam viverra venenatis ex, sed laoreet urna vestibulum a. Nullam turpis nisi, pre
 
 Nulla facilisi. Donec consectetur orci mauris. Vestibulum lobortis sodales hendrerit. Praesent leo urna, cursus non commodo quis, mollis sodales ex. Nunc tincidunt libero sed lacus dictum tristique. Sed sit amet purus nec turpis sollicitudin mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla convallis mauris turpis, vel tincidunt eros pellentesque et. Morbi at gravida dui. Phasellus eget semper tellus. Nunc dapibus tincidunt magna. Vivamus in gravida diam, vitae bibendum sapien.
 
-# Class aptent taciti sociosqu  
+# Class aptent taciti sociosqu
 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non aliquet lectus. Donec fermentum lorem quis magna vestibulum aliquet. Ut blandit massa hendrerit accumsan facilisis. Aliquam ultrices ex eu enim pretium, a elementum erat imperdiet. Sed finibus bibendum nibh in sagittis. Suspendisse tristique, velit id egestas mollis, odio libero porttitor ligula, eget malesuada ipsum est sed libero. Integer nec odio tellus. Vivamus ut elit a odio pharetra accumsan.
 
@@ -32,7 +32,7 @@ Phasellus sed ipsum non nulla sagittis cursus. Quisque tempor lorem vel erat luc
 
 Etiam porttitor porttitor congue. Suspendisse potenti. Vestibulum ac turpis nec ante lobortis fermentum. Aenean consequat turpis ligula, in dictum turpis vestibulum nec. Ut vestibulum faucibus augue at eleifend. Etiam ullamcorper augue ut leo aliquam, ut imperdiet nunc pretium. Morbi sit amet dui a erat viverra venenatis sed eget augue. Sed sit amet accumsan metus. Fusce eget diam quis orci sagittis laoreet sed sit amet lectus. Vivamus imperdiet metus sed lectus luctus, nec pharetra enim fermentum. Nam et dictum tortor. Suspendisse volutpat diam quis suscipit finibus. In magna neque, consectetur in sagittis vel, viverra eu massa.
 
-# Phasellus sed ipsum non nulla sagittis cursus 
+# Phasellus sed ipsum non nulla sagittis cursus
 
 Quisque tempor lorem vel erat luctus sollicitudin. Duis sodales tincidunt enim vitae congue. Pellentesque euismod ex id pretium blandit. Curabitur sed sollicitudin quam. Morbi sit amet lectus ut arcu mattis venenatis. Morbi finibus eget ligula quis tempus. Suspendisse accumsan molestie erat, at pharetra tortor rhoncus in. Vestibulum tempor tortor sed urna tristique accumsan. Duis tempor lectus id ipsum ultrices tristique et at nibh. Praesent ullamcorper nec ipsum et lacinia. Maecenas euismod mollis sollicitudin.
 
@@ -40,4 +40,4 @@ Quisque tempor lorem vel erat luctus sollicitudin. Duis sodales tincidunt enim v
 
 Risus mi interdum erat, ac sollicitudin nisl nisl sit amet elit. Quisque varius lorem in eros porttitor, eu consequat erat sodales. Mauris tincidunt tincidunt felis quis ullamcorper. Mauris eget ante id purus lobortis aliquam. Mauris efficitur dapibus lorem, nec gravida dolor lacinia a. Morbi sodales felis vel nunc mollis cursus. Duis ut efficitur est. Sed iaculis egestas aliquet. Fusce nec arcu condimentum, sodales ipsum sed, semper mauris. Morbi nec sollicitudin leo.
 
-Etiam massa nisi, hendrerit id nunc euismod, maximus scelerisque nunc. Nunc nec tincidunt nunc. Duis sollicitudin tellus in quam accumsan euismod. Ut commodo sodales leo nec porta. Pellentesque luctus, sapien id fermentum venenatis, mi tortor eleifend dui, vel vestibulum nibh est at ante. Curabitur sed dui at orci egestas accumsan. Quisque at lobortis orci. Phasellus urna ipsum, suscipit vel blandit elementum, dictum ac lectus. Mauris et est est. Curabitur euismod augue massa. Aliquam porta, mauris sit amet tempus vehicula, turpis tortor ullamcorper elit, eget faucibus nisl nibh in felis. 
+Etiam massa nisi, hendrerit id nunc euismod, maximus scelerisque nunc. Nunc nec tincidunt nunc. Duis sollicitudin tellus in quam accumsan euismod. Ut commodo sodales leo nec porta. Pellentesque luctus, sapien id fermentum venenatis, mi tortor eleifend dui, vel vestibulum nibh est at ante. Curabitur sed dui at orci egestas accumsan. Quisque at lobortis orci. Phasellus urna ipsum, suscipit vel blandit elementum, dictum ac lectus. Mauris et est est. Curabitur euismod augue massa. Aliquam porta, mauris sit amet tempus vehicula, turpis tortor ullamcorper elit, eget faucibus nisl nibh in felis.
