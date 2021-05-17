@@ -16,14 +16,17 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
+      - name: Install Python dependencies
+        run: |
+          pip install pypandoc
+          pip install pandocfilters
       - name: Install pandoc
         run: |
-          sudo apt-get update
-          sudo apt-get install pandoc
-          pip install pypandoc
-      - name: Install Python dependencies and make website
+          echo 'from pypandoc.pandoc_download import download_pandoc\ndownload_pandoc()' > down_pandoc.py
+          python down_pandoc.py
+          rm down_pandoc.py
+      - name: Make website
         run: |
-          pip install pandocfilters
           yes | make
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
