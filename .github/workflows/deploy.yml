@@ -22,7 +22,6 @@ jobs:
           pip install pandocfilters
       - name: Make website
         run: |
-          python down_pandoc.py
           yes | make
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
