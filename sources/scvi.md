@@ -22,6 +22,7 @@ Detail the inference objective
 ## Training
 
 Any details that aren't clear in manuscripts but are important for training.
+
 ## Tasks
 
 Here we put the mathematical description of tasks.
