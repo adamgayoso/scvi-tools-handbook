@@ -44,17 +44,40 @@
 
 
 
+<div id="collapsiblemenu">
+  <button class="collapsible">
+    <div class="shortthickbar"></div>
+    <div class="shortthickbar"></div>
+    <div class="shortthickbar"></div>
+  </button>
+  <div class="content">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    </ul>
+    <ul>
+    <li><a href="#bibliography">References</a></li>
+    </ul>
+  </div>
+</div>
 
 
-<p>The output of a scRNAseq experiment is a matrix of counts with&nbsp;<span class="math inline">N</span> rows (the number of cells) and&nbsp;<span class="math inline">G</span> columns (the number of genes), where each entry&nbsp;<span class="math inline">x_{ng}</span> is an integer representing how many transcripts of gene&nbsp;<span class="math inline">g</span> where seen in cell&nbsp;<span class="math inline">n</span>. scVI is a generative hierarchical Bayesian model for scRNAseq data with conditional distributions parametrized by neural networks for each gene . There are technical variables to account for different batches (<span class="math inline">s_n</span>) and for library size (<span class="math inline">l_n</span>, which can be interpreted as cell size or sequencing depth). Thus the number of networks being trained is&nbsp;<span class="math inline">2 \cdot G \cdot K</span>, where&nbsp;<span class="math inline">K</span> is the total the number of batches (datasets).</p>
+<p>The output of a scRNAseq experiment is a matrix of counts with&nbsp;<span class="math inline">N</span> rows (the number of cells) and&nbsp;<span class="math inline">G</span> columns (the number of genes), where each entry&nbsp;<span class="math inline">x_{ng}</span> is an integer representing how many transcripts of gene&nbsp;<span class="math inline">g</span> where seen in cell&nbsp;<span class="math inline">n</span>. scVI is a generative hierarchical Bayesian model for scRNAseq data with conditional distributions parametrized by neural networks for each gene.<span class="citation" data-cites="scvi"><span><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle" /><span class="sidenote">Lopez et al., <span>“Deep Generative Modeling for Single-Cell Transcriptomics,”</span> <em>Nature Methods</em> 15, no. 12 (2018): 1053–58.</span></span></span> There are technical variables to account for different batches (<span class="math inline">s_n</span>) and for library size (<span class="math inline">l_n</span>, which can be interpreted as cell size or sequencing depth). Thus the number of networks being trained is&nbsp;<span class="math inline">2 \cdot G \cdot K</span>, where&nbsp;<span class="math inline">K</span> is the total the number of batches (datasets).</p>
 <p>Conditional distribution&nbsp;<span class="math inline">p\left(x_{n g} \mid z_{n}, l_n, s_n \right)</span> is a zero-inflated negative binomial distribution (ZINB) to model the kinetics of stochastic gene expression with some entries replaced by zeros. It can also be modelled using Negative binomial or Zero-inflated negative binomial using the <a href="https://docs.scvi-tools.org/en/stable/_modules/scvi/model/_scvi.html"><code>gene_likelihood</code></a> argument.</p>
 <p>The neural networks&nbsp;<span class="math inline">f^g_{w}</span> and&nbsp;<span class="math inline">f^g_{h}</span> use dropout regularization and batch nomalization to model gene expression while accounting for library sizes and batch effects respectively. Each network typically has 3 fully connected-layers, with 128-256 nodes each. The activation functions are ReLU, exponential, or linear.&nbsp;<span class="math inline">f_{w}</span> has a final softmax layer to represent normalized expected frequencies of gene expression as in. Weights for some layers are shared between&nbsp;<span class="math inline">f_{w}</span> and&nbsp;<span class="math inline">f_{h}</span>.</p>
 <figure>
 <img src="assets/scvi_annotated_graphical_model.png" alt="Fancy plot" /><figcaption aria-hidden="true">Fancy plot</figcaption>
 </figure>
+<section id="bibliography" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-scvi" class="csl-entry" role="doc-biblioentry">
+Lopez, Romain, Jeffrey Regier, Michael B Cole, Michael I Jordan, and Nir Yosef. <span>“Deep Generative Modeling for Single-Cell Transcriptomics.”</span> <em>Nature Methods</em> 15, no. 12 (2018): 1053–58.
+</div>
+</div>
+</section>
 
 <div id="lastupdate">
-Last updated: Mon May 17 07:23:18 UTC 2021
+Last updated: Mon May 17 07:28:13 UTC 2021
 </div>
 </article>
 
