@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Introduction</title>
+  <title>totalVI</title>
   <link rel="stylesheet" href="style.css">
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -22,7 +22,8 @@
 <body>
 <article>
 <header>
-<h1 class="title">Introduction</h1>
+<div id="chapter">2</div>
+<h1 class="title">totalVI</h1>
 </header>
 
 
@@ -38,28 +39,37 @@
     <li><a href="index.html">Home</a></li>
     </ul>
     <ul>
-    <li><a href="#bibliography">References</a></li>
+    <li><a href="#model">Model</a></li>
+    <li><a href="#inference">Inference</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#tasks">Tasks</a></li>
+    <li><a href="#math-to-code">Math to code</a></li>
     </ul>
   </div>
 </div>
 
 
-<p>This document uses the following conventions when depicting graphical models:</p>
-<ul>
-<li>Shaded vertices represent observed random variables.</li>
-<li>Half-shaded vertices represent variables that can be either observed or random. Empty vertices represent latent random variables.</li>
-<li>Edges signify conditional dependency.</li>
-<li>Rectangles (“plates”) represent independent replication.</li>
-</ul>
-<p>For an overview graphical models see Graphical models. M. I. Jordan. Statistical Science (Special Issue on Bayesian Statistics), 19, 140-155, 2004. <a href="http://www.cs.berkeley.edu/~jordan/papers/statsci.ps">PDF</a>.</p>
-<p>For a review of the probability distributions used by the scvi-tools models, see: F. William Townes <em>Review of Probability Distributions for Modeling Count Data</em> (2020).<span class="citation" data-cites="townes2020review"><span><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle" /><span class="sidenote">Townes, <span>“Review of Probability Distributions for Modeling Count Data,”</span> 2020, <a href="http://arxiv.org/abs/2001.04343" role="doc-biblioref">http://arxiv.org/abs/2001.04343</a>.</span></span></span></p>
-<section id="bibliography" class="level1 unnumbered">
-<h1 class="unnumbered">References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-townes2020review" class="csl-entry" role="doc-biblioentry">
-Townes, F. William. <span>“Review of Probability Distributions for Modeling Count Data,”</span> 2020. <a href="http://arxiv.org/abs/2001.04343">http://arxiv.org/abs/2001.04343</a>.
-</div>
-</div>
+<section id="model" class="level2">
+<h2>Model</h2>
+<figure>
+<img src="assets/totalvi_graphical_model.svg" alt="Fancy plot" /><figcaption aria-hidden="true">Fancy plot</figcaption>
+</figure>
+</section>
+<section id="inference" class="level2">
+<h2>Inference</h2>
+<p>Detail the inference objective</p>
+</section>
+<section id="training" class="level2">
+<h2>Training</h2>
+<p>Any details that aren’t clear in manuscripts but are important for training.</p>
+</section>
+<section id="tasks" class="level2">
+<h2>Tasks</h2>
+<p>Here we put the mathematical description of tasks.</p>
+</section>
+<section id="math-to-code" class="level2">
+<h2>Math to code</h2>
+<p>Table for each variable, what it’s variable name is in the code</p>
 </section>
 
 <div id="lastupdate">
