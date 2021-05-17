@@ -19,9 +19,8 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install pandocfilters
-      - name: Setup pandoc
+      - name: Setup pandoc and make document and website
         uses: Ender-events/pandoc@master
-      - name: Make document and website
         run: |
           yes | make
       - name: Deploy 🚀
