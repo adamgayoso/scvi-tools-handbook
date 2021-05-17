@@ -14,11 +14,9 @@ jobs:
           sudo dpkg -i pandoc-2.11.2-1-amd64.deb
           sudo dpkg --status pandoc
       - name: Install latex
-        # run: |
-        #   sudo apt-get update
-        #   sudo apt-get install texlive-latex-extra
         run: |
-          sudo apt-get install texlive-latex-base
+          sudo apt-get update
+          sudo apt-get install texlive-latex-extra
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
@@ -32,7 +30,7 @@ jobs:
           pip install pandocfilters
       - name: Make website
         run: |
-          echo -e "R" | make
+          echo -e "\r" | make
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
