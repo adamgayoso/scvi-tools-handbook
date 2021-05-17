@@ -20,10 +20,7 @@ jobs:
           python-version: 3.8
       - name: Install Python dependencies and make website
         run: |
-          git clone https://github.com/jgm/pandocfilters.git
-          cd pandocfilters
-          python3 setup.py install
-          cd ..
+          pip install pandocfilters
           yes | make
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
