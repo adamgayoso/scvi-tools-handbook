@@ -7,7 +7,9 @@ reference-section-title: References
 
 # Model
 
-![Fancy plot](assets/totalvi_graphical_model.svg){width="100%"}
+Details [@totalvi]
+
+![Fancy plot](assets/totalvi_graphical_model.svg){width="75%"}
 
 # Inference
 
