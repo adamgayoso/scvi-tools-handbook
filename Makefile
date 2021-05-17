@@ -1,11 +1,12 @@
 # Edit variables below to customize book
-booktitle = Book title
+booktitle = scvi-tools model reference
 booksubtitle = Book subtitle
 bookauthors = Author 1, Author 2
 bookfilename = book
 
 # Add all sources that need to compile to some html page
 SOURCES := sources/index.md \
+           sources/introduction.md \
            sources/chapter1.md \
            sources/chapter2.md \
            sources/chapter3.md \
