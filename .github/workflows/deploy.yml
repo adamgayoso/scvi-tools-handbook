@@ -18,7 +18,7 @@ jobs:
           python-version: 3.8
       - name: Install pandoc
         run: |
-          sudo apt install pandoc
+          sudo apt install pandoc-citeproc
       - name: Install Python dependencies
         run: |
           pip install pandocfilters
